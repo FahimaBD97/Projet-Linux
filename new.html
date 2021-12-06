@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin:0;
+  padding:0;
+  background: url(images/bg.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; 
+  background-size: cover; 
+  
+    }
+
+div.gallery {
+  border: 5px solid #cbc;
+  border-top    : 25px solid transparent;
+  border-bottom : 25px solid transparent;
+  border-radius : 50px;
+}
+
+div.gallery:hover {
+  border: 5px solid #757;
+
+}
+
+div.gallery img {
+  width: 100%;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+desc{
+    color:white;}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+    width:400px ;
+	height: 200px;
+    border-radius : 40px;
+    opacity: 0px ;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h2>PROJET LINUX</h2>
+<div style="">
+<h4> Vitrine</h4>
+<div class='esponsive'>
+  <div class='gallery'>
+    <a target='_blank' href='images/poney.jpeg' >
+      <img src='images/poney.jpeg' alt=''  >
+    </a>
+    <div class='desc'>image poney</div>
+  </div> 
+<div class='responsive'>
+ <div class='gallery'>
+ <a target='_blank' href='images/cafe.jpeg'>
+      <img src='images/cafe.jpeg' alt=''  >
+    </a>
+    <div class='desc'>image cafe</div>
+  </div>
+</div> 
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='images/capybara.jpeg'>
+      <img src=images/capybara.jpeg >
+    </a>
+    <div class='desc'>image capybara</div>
+  </div>
+</div>
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='images/corse.png'>
+      <img src='images/corse.png' alt=''  >
+    </a>
+    <div class='desc'>geo corsica</div>
+  </div>
+</div> 
