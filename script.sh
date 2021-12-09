@@ -48,7 +48,7 @@ echo "<div class='responsive'>
     </a>
     <div class='desc'>geo corsica</div>
   </div>
-</div> " >>  new.html
+</div> " >>  new.htm
 fi
 cat footer.txt >> new.html
 
@@ -57,16 +57,16 @@ firefox new.html
 }
 
 #la fonction help
+
 function help {
 echo "--help "
 echo "--build  /taper le chemain du dossier ou copier votre le script"
 echo "--build  /taper le chemain du dossier ou copier votre le script"
-echo "build --debug   pour créer un fichier qui vous affiche les lignes de l'executable "
-echo "connect  pour vous authentifier "
+echo " build --debug   pour créer un fichier qui vous affiche les lignes de l'executable "
+echo " connect  pour vous authentifier "
 }
 if [ $1 = "--help"  ] || [ $1 = "-h"  ]  ; then  
 help
-
 fi
 
 # fonction pour deplacer les fichier du projet vers un nouveau dossier 
@@ -123,7 +123,7 @@ connect
 fi
 }
 
-#appel a la fonction mon site si ya plus de paramétre 
+#appel à la fonction monsite s'il n'y a plus de paramétres 
 if [ $# -eq 0 ] ;then
 monsite
 fi
