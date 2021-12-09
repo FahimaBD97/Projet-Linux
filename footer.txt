@@ -1,5 +1,12 @@
-</div>
-</body>
 <footer>
+  
+<div class="footer">
+
+ <div style="background-color: beige;">© 2021 | Fahima</div>
+
+</div>
+
 </footer>
+
+</body>
 </html>
