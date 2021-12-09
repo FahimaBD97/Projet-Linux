@@ -81,7 +81,20 @@ cp -r images "$1"
 cp vitrin.html "$1"
 cd "$1"
 
+wget -q --spider http://google.com
 
+if [ $? -eq 0 ];then
+ monsite
+
+else
+ echo "veuiller verifier votre connexion"
+fi
+
+#debaugage 
+
+exec 5 > command.txt
+BASH_XTRACEFD= "5"
+set -x
 
 }
 
